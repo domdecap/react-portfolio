@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 // import some type of css framework, deciding between bootstrap and materialUI
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
 import App from './App';
