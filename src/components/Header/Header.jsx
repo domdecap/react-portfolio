@@ -1,11 +1,12 @@
-// Header.jsx
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
+import Navigation from '../Navbar/Navbar';
+import './Header.css';
 
 const Header = () => {
   return (
-    <header>
-      <Navbar />
+    <header className='header'>
+      <a href="/" className='initials'>DD</a>
+      <Navigation />
     </header>
   );
 };
