@@ -5,7 +5,7 @@ import './Header.css';
 const Header = () => {
   return (
     <header className='header'>
-      <a href="/" className='initials'>DD</a>
+      <a href="/" className='initials'>DD.</a>
       <Navigation />
     </header>
   );

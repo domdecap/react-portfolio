@@ -1,6 +1,8 @@
 // Footer.jsx
 import React from 'react';
 import './Footer.css';
+import { FaLinkedin } from "react-icons/fa";
+import { SiGithub } from "react-icons/si";
 
 const Footer = () => {
   return (
@@ -8,8 +10,8 @@ const Footer = () => {
       <div className="footer-container">
         <p>© 2024 My Portfolio. All rights reserved.</p>
         <p>
-          <a href="https://github.com/my-profile" target="_blank" rel="noopener noreferrer">GitHub</a> | 
-          <a href="https://linkedin.com/in/my-profile" target="_blank" rel="noopener noreferrer"> LinkedIn</a>
+          <a href="https://github.com/domdecap" target="_blank" rel="noopener noreferrer"><SiGithub size={30}/></a> | 
+          <a href="https://www.linkedin.com/in/dominicdecapite/" target="_blank" rel="noopener noreferrer"> <FaLinkedin size={30} /></a>
         </p>
       </div>
     </footer>
