@@ -1,0 +1,17 @@
+.navbar {
+    width: 100%;
+  }
+  
+  .navbar-toggler {
+    margin-left: auto;
+  }
+  
+  .navbar-collapse {
+    justify-content: flex-end;
+    
+  }
+  
+  .navbar-nav .nav-link {
+    margin-right: 1em;
+  }
+  

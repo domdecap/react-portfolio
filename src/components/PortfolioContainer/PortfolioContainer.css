@@ -1,0 +1,14 @@
+.portfolio-container {
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .portfolio-container {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      
+    }
+  }
+  
