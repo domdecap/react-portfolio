@@ -1,0 +1,18 @@
+.projects-container {
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .projects-container {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  }
+  
+  .card-img-top {
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover;
+  }
+  
