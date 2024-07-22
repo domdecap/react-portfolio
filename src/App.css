@@ -1,3 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap');
+
+
+:root {
+    --bg-color: #03131a;
+    --h1-color: #c4e7f0;
+    --h2-color: #8fd6e8;
+    --h3-color: #8fd6e8;
+    --h4-color: #6CA6B5;
+    --body-text: #6CA6B5;
+    --nav-bar: #c4e7f0;
+    --button: #d4ff9d;
+    
+
+
+
+}
+
+* {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: var(--bg-color);
+    color: var(--body-text);
+  }
+
+  h1 {
+    color: var(--h1-color);
+  }
+
+  h2 {
+    color: var(--h2-color);
+  }
+
+  h3 {
+    color: var(--h3-color);
+  }
+
+  h4 {
+    color: var(--h4-color);
+  }
+
+  a {
+text-decoration: none;
+  }
+
+  ul {
+    list-style-type: none;
+}
+  
+
 .app-container {
     display: flex;
     flex-direction: column;
@@ -14,3 +67,163 @@
     flex-shrink: 0;
   }
   
+  .about-me {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    margin: 0 auto;
+    margin-left: 45px;
+}
+
+.resume {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    margin: 0 auto;
+    margin-left: 45px;
+}
+
+.bio-container {
+    display: flex;
+    flex-direction: row; /* Horizontal layout for larger screens */
+    align-items: center;
+    gap: 20px; /* Space between text and profile picture */
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row; /* Horizontal layout for larger screens */
+    align-items: center;
+    gap: 20px; /* Space between text and profile picture */
+}
+
+.resume-container {
+    display: flex;
+    flex-direction: row; /* Horizontal layout for larger screens */
+    align-items: center;
+    gap: 20px; /* Space between text and profile picture */
+}
+
+.bio-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.bio-text {
+    max-width: 60%; /* Adjust as needed to fit your design */
+}
+
+.contact-text {
+    max-width: 60%; /* Adjust as needed to fit your design */
+    margin-top: 30px;
+}
+
+.resume-text {
+    /* max-width: 60%;  */
+    margin-top: 30px;
+}
+
+.bio {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.contact {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.skills {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.profile-pic {
+    width: 450px; /* Default size for larger screens */
+    height: 450px;
+    border-radius: 50%; /* Makes the picture round */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+.hero-buttons {
+    display: inline;
+   
+}
+
+.hero-buttons > a {
+    font-size: 1rem;
+    margin-right:2rem;
+    text-decoration: none;
+    
+}
+
+.github-button {
+    color: var(--bg-color);
+    background-color: var(--button);
+    padding: 14px;
+    border-radius: 10px;
+}
+
+.linkedin-button {
+    color: var(--button);
+    border-style: solid;
+    border-width: 3px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .bio-container {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: center; /* Center-align the content */
+    }
+
+    .bio-text {
+        max-width: 100%; /* Allow the text to use full width on smaller screens */
+        text-align: center; /* Center-align the text */
+    }
+
+    .contact-container {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: center; /* Center-align the content */
+    }
+
+    .contact-text {
+        max-width: 100%; /* Allow the text to use full width on smaller screens */
+        text-align: center; /* Center-align the text */
+    }
+
+    .resume-container {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: center; /* Center-align the content */
+    }
+
+    .resume-text {
+        max-width: 100%; /* Allow the text to use full width on smaller screens */
+        text-align: center; /* Center-align the text */
+    }
+
+    .profile-pic {
+        width: 200px; /* Reduced size for mobile screens */
+        height: 200px;
+    }
+
+    .about-me {
+        margin: 0 auto;
+    }
+}

@@ -1,8 +1,90 @@
+:root {
+    --bg-color: #03131a;
+    --h1-color: #c4e7f0;
+    --h2-color: #8fd6e8;
+    --h3-color: #8fd6e8;
+    --h4-color: #6CA6B5;
+    --body-text: #6CA6B5;
+    --nav-bar: #c4e7f0;
+    --button: #d4ff9d;
+    
+
+
+
+}
+
 .projects-container {
     margin: 0 auto;
     padding-left: 1rem;
     padding-right: 1rem;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: var(--bg-color);
   }
+
+  /* General container styling */
+.projects-container {
+    padding: 20px;
+    background-color: var(--bg-color);
+  }
+  
+  /* Styling for individual project cards */
+  .project-card {
+    border: 1px solid --body-text;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    background-color: #102128;
+   
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Styling for project titles */
+  .project-title {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.25rem;
+    color: var(--nav-bar);
+  }
+  
+  /* Styling for project descriptions */
+  .project-description {
+    font-family: 'Fira Code', monospace;
+    font-size: .85rem;
+    color: var(--body-text)
+  }
+  
+  /* Styling for GitHub button */
+  .github-projects-button {
+    font-family: 'Fira Code', monospace;
+    background-color: var(--button);
+    border-color: var(--button);
+    color: var(--bg-color);
+  }
+  
+  .github-projects-button:hover {
+    background-color: #A0C47D;
+    border-color: #A0C47D;
+    color: var(--bg-color);
+  }
+  
+  /* Styling for Live App button */
+  .live-button {
+    font-family: 'Fira Code', monospace;
+  background-color: #102128;
+    color: var(--button);
+    border-style: solid;
+    border-color: var(--button);
+    
+  }
+  
+  .live-button:hover {
+    background-color: #218838;
+    border-color: #218838;
+  }
+  
   
   @media (max-width: 768px) {
     .projects-container {
@@ -12,7 +94,7 @@
   }
   
   .card-img-top {
-    height: 200px; /* Adjust the height as needed */
+    height: 105px; /* Adjust the height as needed */
     object-fit: cover;
   }
   
