@@ -4,45 +4,45 @@ import './Project.css';
 
 const projects = [
   {
-    title: 'Project 1',
-    description: 'Description for project 1.',
-    image: 'path/to/image1.jpg',
-    githubLink: 'https://github.com/user/project1',
+    title: 'Story Routlette',
+    description: 'Bootstrap, Handlebars, Express.js',
+    image: '../../../src/assets/images/my_headshot.jpeg',
+    githubLink: 'https://github.com/deepblueseas/Story-Roulette',
     liveLink: 'https://project1-live.com'
   },
   {
-    title: 'Project 2',
-    description: 'Description for project 2.',
+    title: 'Movie Night',
+    description: 'HTML, CSS, Bootstrap, JS. TMDB API',
     image: 'path/to/image2.jpg',
-    githubLink: 'https://github.com/user/project2',
-    liveLink: 'https://project2-live.com'
+    githubLink: 'https://github.com/tawatson02/movie-night',
+    liveLink: 'https://tawatson02.github.io/movie-night/'
   },
   {
-    title: 'Project 3',
-    description: 'Description for project 3.',
+    title: 'Weather Dashboard',
+    description: 'Bootstrap, JS, OpenWeather API',
     image: 'path/to/image3.jpg',
-    githubLink: 'https://github.com/user/project3',
-    liveLink: 'https://project3-live.com'
+    githubLink: 'https://github.com/domdecap/weather-dashboard',
+    liveLink: 'https://domdecap.github.io/weather-dashboard/'
   },
   {
-    title: 'Project 4',
-    description: 'Description for project 4.',
+    title: 'Just Another Text Editor',
+    description: 'JS, Express.js, Node.js',
     image: 'path/to/image4.jpg',
-    githubLink: 'https://github.com/user/project4',
-    liveLink: 'https://project4-live.com'
+    githubLink: 'https://github.com/domdecap/just-another-text-editor',
+    liveLink: 'https://just-another-text-editor-54n0.onrender.com'
   },
   {
-    title: 'Project 5',
-    description: 'Description for project 5.',
+    title: 'README Generator',
+    description: 'JS, Node.JS',
     image: 'path/to/image5.jpg',
-    githubLink: 'https://github.com/user/project5',
-    liveLink: 'https://project5-live.com'
+    githubLink: 'https://github.com/domdecap/README-generator',
+    liveLink: 'https://github.com/domdecap/README-generator'
   },
   {
-    title: 'Project 6',
-    description: 'Description for project 6.',
+    title: 'Portfolio',
+    description: 'HTML, CSS, React.js',
     image: 'path/to/image6.jpg',
-    githubLink: 'https://github.com/user/project6',
+    githubLink: 'https://github.com/domdecap/react-portfolio',
     liveLink: 'https://project6-live.com'
   }
 ];
@@ -53,13 +53,13 @@ const ProjectsPage = () => {
       <Row>
         {projects.map((project, index) => (
           <Col md={4} key={index} className="mb-4">
-            <Card>
+            <Card className='project-card'>
               <Card.Img variant="top" src={project.image} alt={`${project.title} thumbnail`} />
               <Card.Body>
-                <Card.Title>{project.title}</Card.Title>
-                <Card.Text>{project.description}</Card.Text>
-                <Button variant="primary" href={project.githubLink} target="_blank">GitHub Repo</Button>
-                <Button variant="success" href={project.liveLink} target="_blank" className="ms-2">Live App</Button>
+                <Card.Title className="project-title">{project.title}</Card.Title>
+                <Card.Text className="project-description">{project.description}</Card.Text>
+                <Button variant="primary" href={project.githubLink} target="_blank" className="github-projects-button">GitHub Repo</Button>
+                <Button variant="success" href={project.liveLink} target="_blank" className="live-button ms-2">Live App</Button>
               </Card.Body>
             </Card>
           </Col>
