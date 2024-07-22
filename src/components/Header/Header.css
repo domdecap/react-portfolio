@@ -29,7 +29,8 @@
     font-size: 1.5em;
     font-weight: bold;
     text-decoration: none;
-    color: var(--nav-bar)
+    color: var(--nav-bar);
+    padding: 1rem;
 }
 
 @media (max-width: 600px) {
