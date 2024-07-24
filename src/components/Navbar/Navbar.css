@@ -4,7 +4,7 @@
     --h2-color: #8fd6e8;
     --h3-color: #8fd6e8;
     --h4-color: #6CA6B5;
-    --body-text: #6CA6B5;
+    --body-text: #6CA6B5; 
     --nav-bar: #c4e7f0;
     --button: #d4ff9d;
     
@@ -16,6 +16,11 @@
 .navbar {
     width: 100%;
     color: var(--bg-color);
+    z-index: 99999;
+    background-color: var(--bg-color);
+    text-align: right;
+    opacity: 0.8;
+    
   }
   
   .navbar-toggler {
