@@ -54,7 +54,7 @@ const ProjectsPage = () => {
         {projects.map((project, index) => (
           <Col md={4} key={index} className="mb-4">
             <Card className='project-card'>
-              <Card.Img variant="top" src={project.image} alt={`${project.title} thumbnail`} />
+              {/* <Card.Img variant="top" src={project.image} alt={`${project.title} thumbnail`} /> */}
               <Card.Body>
                 <Card.Title className="project-title">{project.title}</Card.Title>
                 <Card.Text className="project-description">{project.description}</Card.Text>

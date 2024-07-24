@@ -187,7 +187,7 @@ text-decoration: none;
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
     .bio-container {
         flex-direction: column; /* Stack vertically on smaller screens */
         align-items: center; /* Center-align the content */

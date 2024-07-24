@@ -14,7 +14,7 @@
 }
 
 .header {
-    display: flex;
+   
     align-items: center;
     justify-content: space-between;
     height: 8em;
@@ -31,6 +31,7 @@
     text-decoration: none;
     color: var(--nav-bar);
     padding: 1rem;
+    
 }
 
 @media (max-width: 600px) {

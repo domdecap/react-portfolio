@@ -5,10 +5,11 @@ import "./Navbar.css"
 
 function Navigation() {
   return (
-    <Navbar expand="lg" className="navbar">
+    <Navbar expand="lg" className="navbar navbar-dark" >
       <Container>
+      <a href="/" className='initials'>DD.</a>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav className="ml-auto">
             <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
             <Nav.Link as={Link} to="/portfolio">Portfolio</Nav.Link>

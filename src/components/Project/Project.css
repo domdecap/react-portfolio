@@ -7,6 +7,7 @@
     --body-text: #6CA6B5;
     --nav-bar: #c4e7f0;
     --button: #d4ff9d;
+    --hover-button: #A0C47D;
     
 
 
@@ -65,15 +66,15 @@
   }
   
   .github-projects-button:hover {
-    background-color: #A0C47D;
-    border-color: #A0C47D;
+    background-color: var(--hover-button);
+    border-color: var(--hover-button);
     color: var(--bg-color);
   }
   
   /* Styling for Live App button */
   .live-button {
     font-family: 'Fira Code', monospace;
-  background-color: #102128;
+    background-color: #102128;
     color: var(--button);
     border-style: solid;
     border-color: var(--button);
@@ -81,8 +82,10 @@
   }
   
   .live-button:hover {
-    background-color: #218838;
-    border-color: #218838;
+    background-color: #102128;
+    color: var(--hover-button);
+    border-style: solid;
+    border-color: var(--hover-button);
   }
   
   
