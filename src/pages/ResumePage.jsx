@@ -35,7 +35,7 @@ const Resume = () => {
           
           </div>
           <div className="hero-buttons">
-            <a className="github-button" href="./assets/Dominic DeCapite Resume - 05.03.24.pdf">
+            <a className="github-button" href="./assets/Dominic DeCapite Resume - 8.20.24.pdf">
               Download My Resume
             </a>
        

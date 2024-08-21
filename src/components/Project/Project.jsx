@@ -4,11 +4,18 @@ import './Project.css';
 
 const projects = [
   {
+    title: 'Literary Lounge',
+    description: 'MERN, Chakra UI',
+    image: 'path/to/image4.jpg',
+    githubLink: 'https://github.com/deepblueseas/Literary-Lounge',
+    liveLink: 'https://literary-lounge-1.onrender.com/'
+  },
+  {
     title: 'Story Routlette',
     description: 'Bootstrap, Handlebars, Express.js',
-    image: '../../../src/assets/images/my_headshot.jpeg',
+    image: 'path/to/image1.jpg',
     githubLink: 'https://github.com/deepblueseas/Story-Roulette',
-    liveLink: 'https://project1-live.com'
+    liveLink: 'https://story-roulette.onrender.com'
   },
   {
     title: 'Movie Night',
@@ -25,13 +32,6 @@ const projects = [
     liveLink: 'https://domdecap.github.io/weather-dashboard/'
   },
   {
-    title: 'Just Another Text Editor',
-    description: 'JS, Express.js, Node.js',
-    image: 'path/to/image4.jpg',
-    githubLink: 'https://github.com/domdecap/just-another-text-editor',
-    liveLink: 'https://just-another-text-editor-54n0.onrender.com'
-  },
-  {
     title: 'README Generator',
     description: 'JS, Node.JS',
     image: 'path/to/image5.jpg',
@@ -43,7 +43,7 @@ const projects = [
     description: 'HTML, CSS, React.js',
     image: 'path/to/image6.jpg',
     githubLink: 'https://github.com/domdecap/react-portfolio',
-    liveLink: 'https://project6-live.com'
+    liveLink: 'https://domdecap.netlify.app/'
   }
 ];
 
